@@ -19,8 +19,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-          -Dsonar.organization=devsecopsgithubactionsnodejsproject
-          -Dsonar.projectKey=devsecopsganodejsprojectkey
+          -Dsonar.organization=myson
+          -Dsonar.projectKey=myson
   security:
     runs-on: ubuntu-latest
     needs: build
@@ -45,6 +45,6 @@ jobs:
         uses: zaproxy/action-baseline@v0.6.1
         with:
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://example.com/'
+          target: 'http://itsecgames.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
