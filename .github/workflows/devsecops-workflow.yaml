@@ -20,7 +20,8 @@ jobs:
       with:
         args: >
           -Dsonar.organization=myson
-          -Dsonar.projectKey=myson
+          -Dsonar.projectKey=mysonarcode
+
   security:
     runs-on: ubuntu-latest
     needs: build
